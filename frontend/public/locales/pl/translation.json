@@ -1,0 +1,19 @@
+{
+  "Клиенты": "Klienci",
+  "Счета": "Konta",
+  "Имя": "Nazwa",
+  "Возраст": "Wiek",
+  "Почта": "Poczta",
+  "Номер счета": "Numer konta",
+  "Валюта": "Waluta",
+  "Баланс": "Saldo",
+  "Снять": "Odlecieć",
+  "Пополнить": "Uzupełniać",
+  "Сумма": "Ilość",
+  "Снятие со счета": "Wypłata z konta",
+  "Пополнение счета": "Wkład",
+  "Счет": "Wynik",
+  "Перевод": "Przelej na konto",
+  "На счет": "Na konto",
+  "Перевести": "Przelej"
+}

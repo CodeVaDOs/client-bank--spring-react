@@ -1,0 +1,19 @@
+{
+  "Клиенты": "Clients",
+  "Счета": "Accounts",
+  "Имя": "Name",
+  "Возраст": "Age",
+  "Почта": "Post office",
+  "Номер счета": "Account number",
+  "Валюта": "Currency",
+  "Баланс": "Balance",
+  "Снять": "Take off",
+  "Пополнить": "Top up",
+  "Сумма": "Amount",
+  "Снятие со счета": "Withdrawal from the account",
+  "Пополнение счета": "Refill",
+  "Счет": "Account",
+  "Перевод": "Transfer",
+  "На счет": "To the account",
+  "Перевести": "Transfer"
+}

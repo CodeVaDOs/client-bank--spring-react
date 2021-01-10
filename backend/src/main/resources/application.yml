@@ -1,0 +1,53 @@
+# https://docs.spring.io/spring-boot/docs/2.1.x/reference/html/howto-database-initialization.html
+
+spring:
+  profiles:
+    active: prod
+
+---
+
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:mariadb://185.67.2.16:3306/pswatch_testDB
+    username: pswatch_VaDOs
+    password: bzF3e,K#46*9
+    initialization-mode: always # never
+
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: create-drop # update
+
+server:
+  port: 9000
+
+---
+
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+    platform: org.hibernate.dialect.H2Dialect
+    initialization-mode: always
+  jpa:
+    show-sql: true
+    generate-ddl: true
+
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+server:
+  port: 9000
